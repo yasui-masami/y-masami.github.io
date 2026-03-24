@@ -107,30 +107,36 @@
       </div>
       <ul class="news-list">
         <li class="news-item">
-          <div class="news-thumb"><img src="images/news/news1.jpg" alt="新年のご挨拶"></div>
-          <div class="news-body">
-            <time class="news-date" datetime="2026-01-05">2026/01/05</time>
-            <p class="news-head">【新年のご挨拶】</p>
-            <p class="news-text">あけましておめでとうございます。<br>本年もどうぞよろしくお願いいたします。</p>
-          </div>
+          <a href="news-detail.html?id=1" class="news-item-link">
+            <div class="news-thumb"><img src="images/news/news1.jpg" alt="新年のご挨拶"></div>
+            <div class="news-body">
+              <time class="news-date" datetime="2026-01-05">2026/01/05</time>
+              <p class="news-head">【新年のご挨拶】</p>
+              <p class="news-text">あけましておめでとうございます。<br>本年もどうぞよろしくお願いいたします。</p>
+            </div>
+          </a>
         </li>
         <li class="news-rule" role="separator"></li>
         <li class="news-item">
-          <div class="news-thumb"><img src="images/news/news2.jpg" alt="年末年始のお知らせ"></div>
-          <div class="news-body">
-            <time class="news-date" datetime="2025-12-01">2025/12/01</time>
-            <p class="news-head">【年末年始のお知らせ】</p>
-            <p class="news-text">誠に勝手ながら、<br>12月31日(水)〜1月4日(日)までお休みをいただきます。</p>
-          </div>
+          <a href="news-detail.html?id=2" class="news-item-link">
+            <div class="news-thumb"><img src="images/news/news2.jpg" alt="年末年始のお知らせ"></div>
+            <div class="news-body">
+              <time class="news-date" datetime="2025-12-01">2025/12/01</time>
+              <p class="news-head">【年末年始のお知らせ】</p>
+              <p class="news-text">誠に勝手ながら、<br>12月31日(水)〜1月4日(日)までお休みをいただきます。</p>
+            </div>
+          </a>
         </li>
         <li class="news-rule" role="separator"></li>
         <li class="news-item">
-          <div class="news-thumb"><img src="images/news/news3.jpg" alt="新メニュー"></div>
-          <div class="news-body">
-            <time class="news-date" datetime="2025-10-10">2025/10/10</time>
-            <p class="news-head">【新メニュー】</p>
-            <p class="news-text">「アボカドサンドウィッチ」が登場しました。</p>
-          </div>
+          <a href="news-detail.html?id=3" class="news-item-link">
+            <div class="news-thumb"><img src="images/news/news3.jpg" alt="新メニュー"></div>
+            <div class="news-body">
+              <time class="news-date" datetime="2025-10-10">2025/10/10</time>
+              <p class="news-head">【新メニュー】</p>
+              <p class="news-text">「アボカドサンドウィッチ」が登場しました。</p>
+            </div>
+          </a>
         </li>
       </ul>
       <div class="card-foot"><a href="news.html" class="more-btn">▶ お知らせを見る</a></div>
@@ -260,7 +266,6 @@
   </a>
 </footer>
 
-
 <script>
 /* ── ヒーロースライダー ── */
 (function(){
@@ -302,7 +307,6 @@
 /* ── PAGE TOP ── */
 (function(){
   const btn = document.getElementById('js-pagetop');
-
   function checkPosition() {
     const footer = document.querySelector('.site-footer');
     if (!footer) return;
@@ -311,12 +315,10 @@
     btn.style.opacity = visible ? '1' : '0';
     btn.style.pointerEvents = visible ? 'auto' : 'none';
   }
-
   window.addEventListener('scroll', checkPosition, { passive: true });
   window.addEventListener('resize', checkPosition, { passive: true });
   document.addEventListener('fullscreenchange', checkPosition);
 })();
-
 
 (function(){
   let timer;
