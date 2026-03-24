@@ -1,0 +1,275 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ============================================================
+   SHOP INFO 
+============================================================ */
+
+/* ──────────────────────────────────────────
+   ページヒーロー（静的・スライダーなし）
+────────────────────────────────────────── */
+.page-hero {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  background: var(--bg);
+  margin: -1px 0 0 0;
+}
+
+.page-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+
+/* ──────────────────────────────────────────
+   main-inner の下余白をリセット
+   （style.css の padding-bottom: 64px を打ち消す）
+────────────────────────────────────────── */
+.main-inner {
+  padding-bottom: 0;
+}
+
+
+/* ──────────────────────────────────────────
+   Shop Info カード調整
+────────────────────────────────────────── */
+#shopinfo-page.card {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left:  clamp(32px, 5vw, 80px);
+  padding-right: clamp(32px, 5vw, 80px);
+  padding-bottom: clamp(20px, 2vw, 36px);
+}
+
+
+/* ──────────────────────────────────────────
+   マップ
+────────────────────────────────────────── */
+.si-map-wrap {
+  width: 100%;
+  margin-bottom: clamp(20px, 2.5vw, 36px);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.si-map-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* ──────────────────────────────────────────
+   情報エリア（リスト ＋ エンブレム）
+────────────────────────────────────────── */
+.si-body {
+  display: flex;
+  gap: clamp(20px, 4vw, 60px);
+  align-items: center;
+}
+
+
+/* ──────────────────────────────────────────
+   情報リスト
+────────────────────────────────────────── */
+.si-rows {
+  flex: 1;
+  min-width: 0;
+}
+
+.si-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: clamp(14px, 1.6vw, 22px) 0;
+}
+
+.si-icon {
+  flex-shrink: 0;
+  width: clamp(28px, 2.6vw, 38px);
+  height: clamp(28px, 2.6vw, 38px);
+  object-fit: contain;
+  margin-top: 1px;
+}
+
+/* アクセスアイコンのみ大きく */
+.si-rows .si-row:first-child .si-icon {
+  width: clamp(32px, 3.4vw, 42px);
+  height: clamp(36px, 3.4vw, 48px);
+}
+
+.si-label {
+  flex-shrink: 0;
+  width: clamp(72px, 6.5vw, 96px);
+  font-size: clamp(14px, 1.35vw, 19px);
+  color: var(--brown-mid);
+  font-family: var(--font-gothic);
+  font-weight: 500;
+  line-height: 1.6;
+  padding-top: 1px;
+}
+
+.si-value {
+  flex: 1;
+  font-size: clamp(14px, 1.35vw, 19px);
+  color: var(--text);
+  font-family: var(--font-gothic);
+  line-height: 1.75;
+}
+
+.si-divider {
+  border: none;
+  border-top: 2px dashed rgba(117, 81, 60, 0.45);
+  margin: 0;
+}
+
+
+/* ──────────────────────────────────────────
+   エンブレム（右側）
+────────────────────────────────────────── */
+.si-emblem {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.si-emblem-img {
+  width: auto;
+  height: auto;
+  max-width: none;
+  display: block;
+}
+
+
+/* ──────────────────────────────────────────
+   フッター上部：3枚ギャラリー
+────────────────────────────────────────── */
+.si-gallery {
+  display: flex;
+  justify-content: center;
+  gap: clamp(25px, 3vw, 45px);
+  padding: clamp(48px, 6vw, 80px) 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.si-gallery-item {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.si-gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.38s ease;
+}
+
+.si-gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+
+/* ──────────────────────────────────────────
+   レスポンシブ — タブレット（≤ 880px）
+────────────────────────────────────────── */
+@media (max-width: 880px) {
+  .page-hero {
+    height: clamp(220px, 42vw, 420px);
+  }
+
+  .si-body {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .si-emblem {
+    width: clamp(150px, 30vw, 220px);
+  }
+
+  .si-icon {
+    width: clamp(36px, 5vw, 52px);
+    height: clamp(36px, 5vw, 52px);
+  }
+
+  .si-label {
+    width: clamp(96px, 14vw, 130px);
+    font-size: clamp(16px, 2.2vw, 22px);
+  }
+
+  .si-value {
+    font-size: clamp(16px, 2.2vw, 22px);
+  }
+}
+
+
+/* ──────────────────────────────────────────
+   レスポンシブ — スマホ（≤ 600px）
+────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .page-hero {
+    height: 200px;
+  }
+
+  .si-row {
+    gap: 10px;
+    padding: 12px 0;
+  }
+
+  .si-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .si-label {
+    width: 66px;
+    font-size: 13px;
+  }
+
+  .si-value {
+    font-size: 13px;
+  }
+
+  .si-emblem {
+    width: 140px;
+  }
+
+  .si-gallery {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 24px;
+    gap: 14px;
+  }
+
+  .si-gallery-item {
+    overflow: hidden;
+  }
+}
+
+
+/* ──────────────────────────────────────────
+   PAGE TOP ボタン — 1200px コンテンツ右端に揃える
+────────────────────────────────────────── */
+.pagetop {
+  right: max(8px, calc((100vw - 1200px) / 2));
+}
+
+
+/* ──────────────────────────────────────────
+   PAGE TOP ボタン — 1200px コンテンツ右端に揃える
+────────────────────────────────────────── */
+.pagetop {
+  right: max(8px, calc((100vw - 1200px) / 2));
+}

@@ -1,0 +1,347 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ============================================================
+   ABOUT US PAGE 
+============================================================ */
+
+
+/* ──────────────────────────────────────────
+   ヒーロー（静止画）
+────────────────────────────────────────── */
+.about-hero {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  top: -1px;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.about-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+  display: block;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(15,8,0,0.05) 0%,
+    rgba(15,8,0,0.02) 40%,
+    rgba(15,8,0,0.40) 100%
+  );
+  pointer-events: none;
+}
+
+
+/* ──────────────────────────────────────────
+   ページ本体レイアウト
+────────────────────────────────────────── */
+.about-main {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+
+.about-deco { display: none; }
+
+
+.pc-only  { display: block; }
+.tab-only { display: none; }
+.sp-only  { display: none; }
+br.br-pc  { display: block; }
+
+
+.about-deco {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  height: auto;
+}
+
+
+.about-deco1 {
+  width: clamp(80px, 30%, 140px);
+  bottom: -20px;
+  left: -10px;
+}
+
+
+.about-deco3 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  opacity: 0.6;
+}
+
+
+.about-deco2 {
+  width: clamp(80px, 30%, 140px);
+  bottom: -20px;
+  right: -10px;
+}
+
+
+/* ──────────────────────────────────────────
+   イントロカード（上）
+────────────────────────────────────────── */
+.about-intro-card {
+  width: 100%;
+}
+
+.about-intro-card .sec-head,
+.about-detail-card .sec-head {
+  margin-bottom: 10px;
+}
+
+.about-intro-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(16px, 3vw, 48px);
+  padding: 8px clamp(16px, 3vw, 40px) 24px;
+}
+
+.about-intro-deco {
+  width: clamp(80px, 10vw, 140px);
+  height: auto;
+  flex-shrink: 0;
+}
+
+.about-intro-text-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  overflow: visible;
+}
+
+.about-intro-bubble-img {
+  position: absolute;
+  top: 49%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+  display: block;
+}
+
+.about-intro-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-size: clamp(14px, 1.2vw, 18px);
+  font-family: var(--font-gothic);
+  color: var(--text-mid);
+  line-height: 2;
+  padding: clamp(24px, 3vw, 48px) clamp(32px, 4vw, 64px);
+}
+
+
+/* ──────────────────────────────────────────
+   こだわりカード（下）
+────────────────────────────────────────── */
+.about-detail-card {
+  width: 100%;
+}
+
+.about-detail-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 clamp(16px, 3vw, 40px) 16px;
+}
+
+.about-detail-item {
+  display: flex;
+  align-items: stretch;
+  gap: clamp(20px, 3vw, 48px);
+  padding: 32px 0 36px;
+}
+
+.about-detail-rule {
+  border-top: 2px dashed var(--divider);
+  opacity: 0.65;
+  margin: 0;
+}
+
+.about-detail-img {
+  width: clamp(200px, 32%, 360px);
+  height: auto;
+  min-height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+  display: block;
+  align-self: stretch;
+}
+
+/* 右：テキスト */
+.about-detail-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.about-detail-title {
+  font-size: clamp(18px, 2vw, 26px);
+  font-weight: 700;
+  color: var(--text);
+  font-family: var(--font-gothic);
+  margin-bottom: 12px;
+  line-height: 1.4;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--divider);
+  display: inline-block;
+}
+
+.about-detail-text {
+  font-size: clamp(15px, 1.4vw, 19px);
+  color: var(--text-mid);
+  font-family: var(--font-gothic);
+  line-height: 1.9;
+  letter-spacing: 0.08em;
+}
+
+
+.about-detail-text .note {
+  font-size: clamp(12px, 1vw, 14px);
+  color: var(--text-muted);
+}
+
+
+/* ──────────────────────────────────────────
+   PAGE TOP ボタン — 1200px コンテンツ右端に揃える
+────────────────────────────────────────── */
+.pagetop {
+  right: max(8px, calc((100vw - 1200px) / 2));
+}
+
+
+/* ──────────────────────────────────────────
+   レスポンシブ — タブレット（≤ 880px）
+────────────────────────────────────────── */
+@media (min-width: 601px) and (max-width: 880px) {
+  .about-hero { height: 220px; }
+
+  .about-intro-deco { width: 80px; }
+
+  .about-detail-img {
+    width: clamp(140px, 30%, 240px);
+  }
+
+  /* タブレット表示切り替え */
+  .pc-only  { display: none; }
+  .tab-only { display: block; }
+
+  /* タブレット：左下 deco1 */
+  .tab-only.about-deco1 {
+    width: clamp(110px, 16vw, 200px);
+    bottom: -16px;
+    left: clamp(0px, -1vw, 0px);
+  }
+
+  /* タブレット：中央 deco4 */
+  .about-deco4 {
+    width: clamp(200px, 60vw, 500px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    opacity: 0.7;
+  }
+
+  /* タブレット：右下 deco2 */
+  .tab-only.about-deco2 {
+    width: clamp(110px, 16vw, 200px);
+    bottom: -16px;
+    right: clamp(-5px, 6vw, 80px);
+  }
+}
+
+
+/* ──────────────────────────────────────────
+   レスポンシブ — スマホ（≤ 600px）
+────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .about-hero { height: 160px; }
+  .about-main { padding: 20px 12px 40px; gap: 20px; }
+
+  /* PC/SP表示切り替え */
+  .pc-only  { display: none; }
+  .tab-only { display: none !important; }
+  .sp-only  { display: block; }
+  br.br-pc  { display: none; }
+
+  .about-deco3 {
+    width: clamp(200px, 85%, 360px);
+    left: 40%;
+  }
+
+  .about-intro-body {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .about-intro-deco { width: 100px; }
+
+  .about-detail-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .about-detail-img {
+    width: 100%;
+  }
+
+  .about-detail-text {
+    font-size: 13px;
+  }
+
+  .br-sp { display: block; }
+  .br-pc { display: none; }
+  .sp-gap { display: block; margin-bottom: 6px; }
+
+  /* バブル画像を非表示 */
+  .about-intro-bubble-img { display: none; }
+
+  /* スマホ用デコ画像を表示 */
+  .about-deco { display: block; position: absolute; pointer-events: none; }
+
+  /* 左下 */
+  .about-deco1 {
+    width: clamp(80px, 22vw, 120px);
+    bottom: -10px;
+    left: -10px;
+  }
+
+  /* 中央・本文裏 */
+  .about-deco3 {
+    width: clamp(160px, 70vw, 280px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    opacity: 0.6;
+  }
+
+  /* 右下 */
+  .about-deco2 {
+    width: clamp(80px, 22vw, 120px);
+    bottom: -10px;
+    right: -10px;
+  }
+}
