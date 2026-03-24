@@ -85,7 +85,7 @@
 
 .si-row {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 14px;
   padding: clamp(14px, 1.6vw, 22px) 0;
 }
@@ -95,13 +95,17 @@
   width: clamp(28px, 2.6vw, 38px);
   height: clamp(28px, 2.6vw, 38px);
   object-fit: contain;
-  margin-top: 1px;
 }
 
-/* アクセスアイコンのみ大きく */
+/* アクセス行：上揃え＋アイコン大きく */
+.si-rows .si-row:first-child {
+  align-items: flex-start;
+}
+
 .si-rows .si-row:first-child .si-icon {
   width: clamp(32px, 3.4vw, 42px);
   height: clamp(36px, 3.4vw, 48px);
+  transform: translateY(-12px);
 }
 
 .si-label {
@@ -199,6 +203,11 @@
     width: clamp(150px, 30vw, 220px);
   }
 
+  .si-rows .si-row:first-child .si-icon {
+    width: clamp(45px, 3.4vw, 58px);
+    height: clamp(45px, 3.4vw, 58px);
+  }
+
   .si-icon {
     width: clamp(36px, 5vw, 52px);
     height: clamp(36px, 5vw, 52px);
@@ -256,14 +265,6 @@
   .si-gallery-item {
     overflow: hidden;
   }
-}
-
-
-/* ──────────────────────────────────────────
-   PAGE TOP ボタン — 1200px コンテンツ右端に揃える
-────────────────────────────────────────── */
-.pagetop {
-  right: max(8px, calc((100vw - 1200px) / 2));
 }
 
 

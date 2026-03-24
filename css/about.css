@@ -285,10 +285,6 @@ br.br-pc  { display: block; }
   .sp-only  { display: block; }
   br.br-pc  { display: none; }
 
-  .about-deco3 {
-    width: clamp(200px, 85%, 360px);
-    left: 40%;
-  }
 
   .about-intro-body {
     flex-direction: column;
@@ -331,8 +327,8 @@ br.br-pc  { display: block; }
   /* 中央・本文裏 */
   .about-deco3 {
     width: clamp(160px, 70vw, 280px);
-    top: 50%;
-    left: 50%;
+    top: 49%;
+    left: 40%;
     transform: translate(-50%, -50%);
     z-index: 0;
     opacity: 0.6;
