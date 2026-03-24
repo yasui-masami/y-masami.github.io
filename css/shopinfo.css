@@ -231,6 +231,10 @@
   .page-hero {
     height: 160px;
   }
+	
+	#shopinfo-page.card {
+  padding-top: 20px;
+}
 
   .si-row {
     gap: 10px;
@@ -240,6 +244,12 @@
   .si-icon {
     width: 24px;
     height: 24px;
+  }
+
+  .si-rows .si-row:first-child .si-icon {
+    width: 24px;
+    height: 26px;
+    transform: translateY(-4px);
   }
 
   .si-label {
@@ -258,7 +268,7 @@
   .si-gallery {
     flex-direction: column;
     align-items: center;
-    padding: 20px 24px;
+    padding: 20px 24px 40px;
     gap: 14px;
   }
 
@@ -267,10 +277,4 @@
   }
 }
 
-
-/* ──────────────────────────────────────────
-   PAGE TOP ボタン — 1200px コンテンツ右端に揃える
-────────────────────────────────────────── */
-.pagetop {
-  right: max(8px, calc((100vw - 1200px) / 2));
-}
+  .pagetop { position: absolute; top: -30px; right: 8px; bottom: auto; left: auto; width: 70px; height: 70px; opacity: 1; pointer-events: auto; }

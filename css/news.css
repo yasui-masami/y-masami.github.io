@@ -279,12 +279,20 @@
   .news-hero { height: 160px; }
   .news-main  { padding: 20px 12px 40px; }
 
+  .news-item-link {
+    padding: 12px 0 12px 12px;
+    gap: 10px;
+  }
+
   .news-item-link .news-thumb {
     width: 70px;
     height: 70px;
   }
 
-  .news-arrow { font-size: 12px; }
+  .news-arrow {
+    font-size: 12px;
+    margin-right: 8px;
+  }
 
   .page-btn {
     width: 30px;
@@ -299,4 +307,6 @@
   .news-detail-img {
     width: 100%;
   }
+	
+	 .pagetop { position: absolute; top: -30px; right: 8px; bottom: auto; left: auto; width: 70px; height: 70px; opacity: 1; pointer-events: auto; }
 }
