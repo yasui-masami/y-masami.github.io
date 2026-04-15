@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Cafe and Bakery HIDAMARI</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/menu.css">
+
+</head>
+<body>
+
+<div class="hero-wood-wrap">
+  <img class="hero-wood-img" src="images/common/bg_wood1.png" alt="" aria-hidden="true">
+  <a href="index.html" class="hero-logo-link">
+    <img class="hero-logo-img" src="images/common/logo.png" alt="Cafe and Bakery HIDAMARI">
+  </a>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <nav class="global-nav">
+      <button class="nav-toggle" id="js-toggle" aria-label="メニュー" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-list" id="js-nav">
+        <li class="nav-item">
+          <a href="news.html" class="nav-link">
+            <span class="nav-en">News</span>
+            <span class="nav-ja">お知らせ</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <img class="nav-flower" src="images/common/deco-flower.png" alt="" aria-hidden="true">
+          <a href="about.html" class="nav-link">
+            <span class="nav-en">About us</span>
+            <span class="nav-ja">私たちについて</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <img class="nav-flower" src="images/common/deco-flower.png" alt="" aria-hidden="true">
+          <a href="menu.html" class="nav-link">
+            <span class="nav-en">Menu</span>
+            <span class="nav-ja">メニュー</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <img class="nav-flower" src="images/common/deco-flower.png" alt="" aria-hidden="true">
+          <a href="shopinfo.html" class="nav-link">
+            <span class="nav-en">Shop Info</span>
+            <span class="nav-ja">店舗情報</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <img class="page-hero-img" src="images/menu/menu-hero.png" alt="メニュートップ画像">
+  <div class="page-hero-overlay"></div>
+</section>
+
+<div class="menu-page-wrap">
+  <div class="menu-page-inner">
+    <div class="menu-page-card">
+
+      <div class="sec-head">
+        <img class="sec-deco" src="images/top/reaf1.png" alt="" aria-hidden="true">
+        <h1 class="sec-title">Menu</h1>
+        <img class="sec-deco sec-deco--r" src="images/top/reaf2.png" alt="" aria-hidden="true">
+      </div>
+
+      <div class="menu-tabs" role="tablist">
+        <button class="menu-tab is-active" data-target="all"     role="tab" aria-selected="true">All</button>
+        <button class="menu-tab"           data-target="food"    role="tab" aria-selected="false">Food</button>
+        <button class="menu-tab"           data-target="drink"   role="tab" aria-selected="false">Drink</button>
+        <button class="menu-tab"           data-target="dessert" role="tab" aria-selected="false">Dessert</button>
+        <button class="menu-tab"           data-target="set"     role="tab" aria-selected="false">Set Menu</button>
+      </div>
+
+      <!-- Food -->
+      <section class="menu-section" id="sec-food">
+        <div class="menu-cat-head">
+          <h2 class="menu-cat-title">Food</h2>
+          <div class="menu-cat-line"></div>
+        </div>
+        <div class="menu-items-grid">
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Food/food1.jpg" alt="完熟トマトとベーコンのサンドウィッチ"></div>
+            <p class="menu-grid-name">完熟トマトとベーコンの<br>サンドウィッチ</p>
+            <p class="menu-grid-price">¥750（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Food/food2.jpg" alt="ふんわり卵とトマトのグリルサンドウィッチ"></div>
+            <p class="menu-grid-name">ふんわり卵とトマトのグリル<br>サンドウィッチ</p>
+            <p class="menu-grid-price">¥750（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Food/food3.jpg" alt="アボカドサンドウィッチ"></div>
+            <p class="menu-grid-name">アボカドサンドウィッチ</p>
+            <p class="menu-grid-price">¥750（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Food/food4.jpg" alt="とろけるチーズとりんごのサンドウィッチ"></div>
+            <p class="menu-grid-name">とろけるチーズとりんごの<br>サンドウィッチ</p>
+            <p class="menu-grid-price">¥450（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Food/food5.jpg" alt="プレミアム・クロワッサンサンド"></div>
+            <p class="menu-grid-name">プレミアム・クロワッサンサンド</p>
+            <p class="menu-grid-price">¥450（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Food/food6.jpg" alt="フレッシュ・チーズバーガー"></div>
+            <p class="menu-grid-name">フレッシュ・チーズバーガー</p>
+            <p class="menu-grid-price">¥1,150（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Food/food7.jpg" alt="彩り野菜と目玉焼きトースト"></div>
+            <p class="menu-grid-name">彩り野菜と目玉焼きトースト</p>
+            <p class="menu-grid-price">¥450（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Food/food8.jpg" alt="フレッシュキノコの燻製炒め風タコサラダ"></div>
+            <p class="menu-grid-name">フレッシュキノコの<br>燻製炒め風タコサラダ</p>
+            <p class="menu-grid-price">¥480（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Food/food9.jpg" alt="香ばしチキンと旬の野菜のガーデンボウル"></div>
+            <p class="menu-grid-name">香ばしチキンと旬の野菜の<br>ガーデンボウル</p>
+            <p class="menu-grid-price">¥720（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Food/food10.jpg" alt="チーズとベーコンのカルボナーラ"></div>
+            <p class="menu-grid-name">チーズとベーコンのカルボナーラ</p>
+            <p class="menu-grid-price">¥850（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Food/food11.jpg" alt="懐かしのナポリタン"></div>
+            <p class="menu-grid-name">懐かしのナポリタン</p>
+            <p class="menu-grid-price">¥650（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Food/food12.jpg" alt="8種の彩り野菜と甘辛肉のビビンバ"></div>
+            <p class="menu-grid-name">8種の彩り野菜と甘辛肉のビビンバ</p>
+            <p class="menu-grid-price">¥1,050（税込み）</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Drink -->
+      <section class="menu-section" id="sec-drink">
+        <div class="menu-cat-head">
+          <h2 class="menu-cat-title">Drink</h2>
+          <div class="menu-cat-line"></div>
+        </div>
+        <div class="menu-items-grid">
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Drink/drink1.jpg" alt="コーヒー"></div>
+            <p class="menu-grid-name">コーヒー（Hot / Ice）</p>
+           <p class="menu-grid-price">¥520（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Drink/drink2.jpg" alt="ココア"></div>
+            <p class="menu-grid-name">ココア（Hot / Ice）</p>
+            <p class="menu-grid-price">¥550（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Drink/drink3.jpg" alt="紅茶"></div>
+            <p class="menu-grid-name">紅茶（Hot / Ice）</p>
+            <p class="menu-grid-price">¥550（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Drink/drink4.jpg" alt="カフェラテ"></div>
+            <p class="menu-grid-name">カフェラテ（Hot / Ice）</p>
+            <p class="menu-grid-price">¥650（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Drink/drink5.jpg" alt="エスプレッソラテ"></div>
+            <p class="menu-grid-name">エスプレッソラテ（Hot / Ice）</p>
+            <p class="menu-grid-price">¥650（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Drink/drink6.jpg" alt="抹茶ラテ"></div>
+            <p class="menu-grid-name">抹茶ラテ（Hot / Ice）</p>
+            <p class="menu-grid-price">¥620（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Drink/drink7.jpg" alt="ウーロン茶"></div>
+            <p class="menu-grid-name">ウーロン茶</p>
+            <p class="menu-grid-price">¥530（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Drink/drink8.jpg" alt="オレンジジュース"></div>
+            <p class="menu-grid-name">オレンジジュース</p>
+            <p class="menu-grid-price">¥450（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Drink/drink9.jpg" alt="レモンジンジャー"></div>
+            <p class="menu-grid-name">レモンジンジャー</p>
+            <p class="menu-grid-price">¥550（税込み）</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dessert -->
+      <section class="menu-section" id="sec-dessert">
+        <div class="menu-cat-head">
+          <h2 class="menu-cat-title">Dessert</h2>
+          <div class="menu-cat-line"></div>
+        </div>
+        <div class="menu-items-grid">
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Dessert/dessert1.jpg" alt="焼き菓子"></div>
+            <p class="menu-grid-name">焼き菓子</p>
+            <p class="menu-grid-price">¥280（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Dessert/dessert2.jpg" alt="ドーナツ"></div>
+            <p class="menu-grid-name">ドーナツ</p>
+            <p class="menu-grid-price">¥350（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Dessert/dessert3.jpg" alt="苺タルト"></div>
+            <p class="menu-grid-name">苺タルト</p>
+            <p class="menu-grid-price">¥420（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Dessert/dessert4.jpg" alt="ティラミス"></div>
+            <p class="menu-grid-name">ティラミス</p>
+            <p class="menu-grid-price">¥620（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Dessert/dessert5.jpg" alt="苺ショートケーキ"></div>
+            <p class="menu-grid-name">苺ショートケーキ</p>
+            <p class="menu-grid-price">¥450（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Dessert/dessert6.jpg" alt="レモンチーズケーキ"></div>
+            <p class="menu-grid-name">レモンチーズケーキ</p>
+            <p class="menu-grid-price">¥650（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Dessert/dessert7.jpg" alt="マカロン（3個）"></div>
+            <p class="menu-grid-name">マカロン（3個）</p>
+            <p class="menu-grid-price">¥380（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Dessert/dessert8.jpg" alt="バニラアイス"></div>
+            <p class="menu-grid-name">バニラアイス</p>
+            <p class="menu-grid-price">¥350（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Dessert/dessert9.jpg" alt="苺パフェ"></div>
+            <p class="menu-grid-name">苺パフェ</p>
+            <p class="menu-grid-price">¥750（税込み）</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Set Menu -->
+      <section class="menu-section" id="sec-set">
+        <div class="menu-cat-head">
+          <h2 class="menu-cat-title">Set Menu</h2>
+          <div class="menu-cat-line"></div>
+        </div>
+        <div class="menu-items-grid">
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Set_Menu/set_menu1.jpg" alt="コーヒーと焼き菓子セット"></div>
+            <p class="menu-grid-name">コーヒーと<br>焼き菓子セット</p>
+            <p class="menu-grid-price">¥750（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Set_Menu/set_menu2.jpg" alt="本日のパンと手作りクッキーセット"></div>
+            <p class="menu-grid-name">本日のパンと<br>手作りクッキーセット</p>
+            <p class="menu-grid-price">¥950（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Set_Menu/set_menu3.jpg" alt="モーニング・サンドウィッチセット"><span class="menu-photo-label">〜11:30</span></div>
+            <p class="menu-grid-name">モーニング・<br>サンドウィッチセット</p>
+            <p class="menu-grid-price">¥1,150（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Set_Menu/set_menu4.jpg" alt="和風パスタセット"></div>
+            <p class="menu-grid-name">和風パスタセット</p>
+            <p class="menu-grid-price">¥1,320（税込み）</p>
+          </div>
+          <div class="menu-grid-item">
+            <div class="menu-grid-photo"><img src="images/menu/Set_Menu/set_menu5.jpg" alt="マカロン日曜パーティセット"></div>
+            <p class="menu-grid-name">マカロンパーティセット</p>
+            <p class="menu-grid-price">¥1,150（税込み）</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-center">
+    <p class="footer-copy">© Cafe and Bakery HIDAMARI. All rights reserved.</p>
+    <div class="footer-sns">
+      <a href="#" class="sns-btn" aria-label="Instagram">
+        <img src="images/common/icon_instagram.png" alt="Instagram">
+      </a>
+      <a href="#" class="sns-btn" aria-label="Facebook">
+        <img src="images/common/icon-facebook.png" alt="Facebook">
+      </a>
+    </div>
+  </div>
+  <a href="#" class="pagetop" id="js-pagetop" aria-label="ページトップへ">
+    <img src="images/common/btn_pagetop.png" alt="PAGE TOP">
+  </a>
+</footer>
+
+<script>
+(function(){
+  const btn = document.getElementById('js-toggle');
+  const nav = document.getElementById('js-nav');
+  btn.addEventListener('click', function(){
+    const open = nav.classList.toggle('is-open');
+    btn.classList.toggle('is-open', open);
+    btn.setAttribute('aria-expanded', open);
+  });
+  nav.querySelectorAll('.nav-link').forEach(a => {
+    a.addEventListener('click', () => {
+      nav.classList.remove('is-open');
+      btn.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+(function(){
+  const btn = document.getElementById('js-pagetop');
+  function checkPosition() {
+    const footer = document.querySelector('.site-footer');
+    if (!footer) return;
+    const footerTop = footer.getBoundingClientRect().top;
+    const visible = footerTop < window.innerHeight;
+    btn.style.opacity = visible ? '1' : '0';
+    btn.style.pointerEvents = visible ? 'auto' : 'none';
+  }
+  window.addEventListener('scroll', checkPosition, { passive: true });
+  window.addEventListener('resize', checkPosition, { passive: true });
+})();
+(function(){
+  const tabs = document.querySelectorAll('.menu-tab');
+  const sections = {
+    food:    document.getElementById('sec-food'),
+    drink:   document.getElementById('sec-drink'),
+    dessert: document.getElementById('sec-dessert'),
+    set:     document.getElementById('sec-set'),
+  };
+  tabs.forEach(tab => {
+    tab.addEventListener('click', function(){
+      const target = this.dataset.target;
+      tabs.forEach(t => {
+        t.classList.remove('is-active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      this.classList.add('is-active');
+      this.setAttribute('aria-selected', 'true');
+      Object.entries(sections).forEach(([key, sec]) => {
+        if (target === 'all' || key === target) {
+          sec.classList.remove('is-hidden');
+          /* アニメーションをリセットして再発火 */
+          sec.classList.remove('is-animating');
+          void sec.offsetWidth; /* reflow */
+          sec.classList.add('is-animating');
+          sec.addEventListener('animationend', function handler(){
+            sec.classList.remove('is-animating');
+            sec.removeEventListener('animationend', handler);
+          });
+        } else {
+          sec.classList.add('is-hidden');
+          sec.classList.remove('is-animating');
+        }
+      });
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
